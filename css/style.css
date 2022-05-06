@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background-color: #C8C8C8;
+    /*background: url(/images/header_bg.jpg) top no-repeat;*/
+    background: radial-gradient(farthest-corner, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(https://picsum.photos/1280/400) center/cover;
+    background-size: cover;
+}
+header h1 {
+    color: #E3E3E3;
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.news {
+    background-color: #fff;
+    padding: 50px 0 32px;
+}
+article {
+    color: #6C6C6C;
+    width: 768px;
+    margin: 0 auto 32px;
+    padding: 6px 15px;
+    border-bottom: 1px solid #979797;
+}
+article a {
+    color: #6C6C6C;
+    text-decoration: none;
+}
+article a:hover {
+    color: black;
+    text-decoration: underline;
+}
+article h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+}
+.article-meta {
+    color: #6C6C6C;
+    margin-bottom: 5px;
+}
+article img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+footer {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+footer .links {
+    margin-bottom: 30px;
+}
+footer .links > a {
+    color: #6C6C6C;
+    padding: 5px 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+footer .links > a:hover {
+    color: #fff !important;
+    /*font-size: 14px;*/
+    /*text-decoration: underline; */
+    background-color: #979797;
+}
+footer .copyright {
+    color: #6C6C6C;
+    font-family: 'Times New Roman', Times, serif;
+}
