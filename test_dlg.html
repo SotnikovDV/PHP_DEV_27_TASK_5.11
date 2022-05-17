@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/test_dlg.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Простой попап диалог с формой -->
+<dialog id="favDialog">
+    <form method="dialog">
+      <section>
+        <p><label class="animalList"" for="favAnimal">Ваше любимое животное:</label>
+        <select id="favAnimal">
+          <option></option>
+          <option>Динозавр</option>
+          <option>Питон</option>
+          <option>Жаба</option>
+        </select></p>
+      </section>
+      <menu>
+        <button type="submit">OK</button>
+        <button id="cancel" type="reset">Отмена</button>
+      </menu>
+    </form>
+  </dialog>
+  
+  <menu>
+    <button id="updateDetails">Update details</button>
+  </menu>
+  
+  <script>
+    (function() {
+      var updateButton = document.getElementById('updateDetails');
+      var cancelButton = document.getElementById('cancel');
+      var favDialog = document.getElementById('favDialog');
+  
+      // Update button opens a modal dialog
+      updateButton.addEventListener('click', function() {
+        favDialog.showModal();
+      });
+  
+      // Form cancel button closes the dialog box
+      cancelButton.addEventListener('click', function() {
+        favDialog.close();
+      });
+  
+    })();
+  </script>
+</body>
+</html>

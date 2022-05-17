@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Новости</h1>
+        <h1 id="grandTitle">Новости</h1>
     </header>  
     <main>
         <section class="news">
@@ -22,7 +22,7 @@
                 <a href="#">
                 <img src="https://picsum.photos/700/400" alt="Иллюстрация к новости 1">
                 </a>
-                <p>Краткое описание новости 1</p>
+                <p onclick="console.clear(); alert('Это обработчик щелчка по описанию новости')">Краткое описание новости 1</p>
             </article>
             <article>
                 <a href="#">
@@ -86,4 +86,5 @@
         </div>
     </footer>  
 </body>
+<script src="js/script.js"></script>
 </html>

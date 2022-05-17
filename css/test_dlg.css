@@ -1,0 +1,28 @@
+#favDialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #E3E3E3;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid #979797;
+}
+#favDialog #favAnimal {
+    width: 80%;
+}
+#favDialog button {
+    width: 45%;
+    color: #6C6C6C;
+    padding: 5px 5px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#favDialog button:hover {
+    color: #fff !important;
+    /*font-size: 14px;*/
+    /*text-decoration: underline; */
+    background-color: #979797;
+}
